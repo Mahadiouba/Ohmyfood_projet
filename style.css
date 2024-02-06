@@ -1,0 +1,313 @@
+/*********General************/
+
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    
+}
+
+/***********Header************/
+
+header {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.logo {
+    
+}
+
+.localisation {
+
+}
+
+.explorer {
+    
+}
+
+/***********Main************/
+
+main {
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.menu {
+    text-align: center;
+}
+
+.fonction {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.fonction_title {
+
+}
+
+.menu_fonction {
+
+}
+
+.button_fonction {
+
+}
+
+.restaurants {
+
+}
+
+.restaurants_title {
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cards img {
+    object-fit: cover;
+    height: 200px;
+
+}
+
+.card_main {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-bottom: 10%;
+}
+
+.card_txt {
+
+}
+
+.favoris {
+
+}
+
+/***********Footer************/
+
+.logo_footer {
+
+}
+
+.footer_txt {
+
+}
+
+@media (max-width: 1024px) {
+
+    /***********Header*************/
+    
+    
+
+    /***********Main*************/
+
+
+    /***********Footer*************/
+
+}
+
+@media (max-width: 767.98px){
+
+    /***********Header*************/
+
+
+    .logo {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .logo img {
+        width:80%;
+    }
+
+    .localisation {
+        text-align: center;
+        padding: 20px;
+        background: #EAEAEA;
+        filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+        box-shadow: 0px 4px 4px 0px #00000040;
+        font-size: larger;
+    }
+
+    .localisation i {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+   
+    /***********Main*************/
+
+    main {
+        margin: auto;
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .menu {
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    nav {
+        background-color: #F3F3F3;
+        padding: 20px;
+        font-size: 100;
+    }
+
+    .explorer {
+        border-radius: 30px;
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        padding: 20px;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: larger;
+    }
+    
+    .menu_title {
+        font-size: 24px;
+    }
+
+    .menu_sous-titre {
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .menu_txt {
+
+    }
+
+    .fonction {
+        margin: auto;
+        font-family: "Roboto", sans-serif;
+        padding-bottom: 10%;
+        width: 90%;
+    }
+    
+    .fonction_title {
+        text-align: start;
+        font-size: 24px;
+    }
+    
+    .menu_fonction {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .button_fonction {
+        border-radius: 20px;
+        padding: 30px;
+        background-color: #F3F3F3;
+        width: 80%;
+        margin: auto;
+        box-shadow: 0px 4px 15px 0px #00000026;
+        display: flex;
+    }
+
+    .icon_fonction {
+
+    }
+
+    .fonction_txt {
+        
+    }
+
+    .numbers {
+        border-radius: 50%;
+        background: #9356DC;
+        width: 30px;
+        height: 30px;
+        margin-left: -50px;
+        
+    }
+    
+    .restaurants {
+        background: #F3F3F3;
+        
+    }
+    
+    .restaurants_title {
+        padding: 15px;
+        font-size: 24px;
+    }
+        
+    .cards {
+    
+    }
+    
+    .cards img {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    
+    .card_main {
+        background-color: white;
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    .card_txt {
+        margin-left: 20px;
+        
+    }
+    
+    .favoris {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 20px;
+        
+    }
+
+   
+
+    /***********Footer**********/
+
+    footer {
+        background: #353535;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .logo_footer {
+        margin-left: 20px;
+        width: 60%;
+        
+    }
+    
+    .footer_txt {
+        margin-left: 20px;
+        color: white;
+    }
+
+    .logo_footer img{
+        width:40%;
+    }
+
+    footer i{
+        margin-right: 15px;
+    }
+}
