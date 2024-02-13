@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <div class="logo"><a href="#">
-            <img src="/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo"></a></div>
+        
+       <a href="#"><h1 class="logo">0hmyfood</h1></a>
 
         <div class="localisation">
             <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
@@ -22,43 +22,45 @@
 
     <main>
         <nav>
-            <div class="menu">
-            
-            <div class="menu_title"><h1>Réservez le menu qui vous convient</h1></div>
-            <div class="menu_sous-titre">Découvrez des restaurants d'exception sélectionnés par nos soins.</div>
-            <div class="menu_txt"><a href="#"><div class="explorer">Explorer nos restaurant</div></a></div>
+            <h2 class="menu__title">Réservez le menu qui vous convient</h2>
+            <p class="menu__sous-titre">Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
+            <div class="explorer">Explorer nos restaurant</div></a></div>
 
-            </div>
+            
         </nav>
 
         <section class="fonction">
 
-            <div class="fonction_title">
+            <div class="fonction__title">
                 <h2>Fonctionnement</h2>
             </div>
 
-            <div class="menu_fonction">
+            <div class="menu__fonction">
+
             <a href="#">
-            <div class="button_fonction">
-                <div class="numbers">1</div>
-                <div class="icon_fonction"><i class="fa-solid fa-mobile"></i></div>
-                <div class="fonction_txt">Choisissez un restaurant</div>
-            </a>
+            <div class="button__fonction">
+                <span class="numbers">1</span>
+                <div class="icon__fonction"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div class="fonction__txt">Choisissez un restaurant</div>
             </div>
+            </a>
+            
             <a href="#">
-            <div class="button_fonction">
-                <div class="numbers">2</div>
-                <div class="icon_fonction"><i class="fa-solid fa-bars"></i></div>
-                <div class="fonction_txt">Composez votre menu</div>
-            </a>
+            <div class="button__fonction">
+                <span class="numbers">2</span>
+                <span class="icon__fonction"><i class="fa-solid fa-bars"></i></span>
+                <div class="fonction__txt">Composez votre menu</div>
             </div>
+            </a>
+            
+
             <a href="#">
-            <div class="button_fonction">
-                <div class="numbers">3</div>
-                <div class="icon_fonction"><i class="fa-solid fa-store"></i></div>
-                <div class="fonction_txt">Dégustez au restaurant</div>
-            </a>
+            <div class="button__fonction">
+                <span class="numbers">3</span>
+                <div class="icon__fonction"><i class="fa-solid fa-store"></i></div>
+                <div class="fonction__txt">Dégustez au restaurant</div>
             </div>
+            </a>
             </div>
 
         </section>
@@ -66,27 +68,28 @@
 
         <section class="restaurants">
 
-            <div class="restaurants_title"><h2>Restaurants</h2></div>
+            <div class="restaurants__title"><h2>Restaurants</h2></div>
 
             <div class="cards">
 
-                <div class="card_main">
-                    <a href="#">
+                <div class="card__main">
+                    <a href="menu_palettes.html">
                     <img src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo_menu">
                 
-                    <div class="card_txt">
+                    <div class="card__txt">
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
+                        <div class="favoris"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
                     </div>
                     </a>
-                    <div class="favoris"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                  <!--   <div class="favoris"><a href="#"><i class="fa-regular fa-heart"></i></a></div> -->
                 </div>
             
-                <div class="card_main">
-                    <a href="#">
+                <div class="card__main">
+                    <a href="menu_note.html">
                     <img src="Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo_menu">
                 
-                    <div class="card_txt">
+                    <div class="card__txt">
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                     </div>
@@ -95,11 +98,11 @@
                 </div>
                 
 
-                <div class="card_main">
-                    <a href="#">
+                <div class="card__main">
+                    <a href="menu_fr.html">
                     <img src="Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo_menu">
                 
-                    <div class="card_txt">
+                    <div class="card__txt">
                         <h3>A la française</h3>
                         <p>Cité Rouge</p>
                     </div>
@@ -108,11 +111,11 @@
                 </div>
                 
 
-                <div class="card_main">
-                    <a href="#">
+                <div class="card__main">
+                    <a href="menu_delice.html">
                     <img src="Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo_menu">
                 
-                    <div class="card_txt">
+                    <div class="card__txt">
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
                     </div>
@@ -126,14 +129,16 @@
     </main>
 
     <footer>
-        <div class="logo_footer"><h3><img src="Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo"></h3></div>
+        <div class="ft">
+        <div class="logo__footer"><h3>ohmyfood</h3></div>
         <div>
 
-        <div class="footer_txt">
+        <div class="footer__txt">
             <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
             <p><i class="fa-regular fa-handshake"></i>Devenir partenaire</p>
             <p>Mentions Légales</p>
             <p>Contact</p>
+        </div>
         </div>
         </div>
     </footer>
