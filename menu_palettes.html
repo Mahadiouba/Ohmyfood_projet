@@ -7,44 +7,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="les_menus.css">
-    <title>OhMyFood - La palette du goût</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Ohmyfood - La palette du goût</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><div class="arrow"><i class="fa-solid fa-arrow-left"></i></div><h1 class="logo">0hmyfood</h1></a>
-
-        <div class="img__background">
-            
-        </div>
-        
+    <header class="hearder__contain">
+        <a href="index.html"><div class="arrow"><i class="fa-solid fa-arrow-left"></i></div>
+        <div><h1 class="logo">0hmyfood</h1></a></div>
     </header>
 
-    <main>
+    <main class="main__container">
+
+        <div class="img__background">
+            <img src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo plats">
+        </div>
+
+    <div class="menus">
+
         <div class="
-        First__title"><h2>La palette du goût</h2><span><i class="fa-regular fa-heart"></i></span></div>
+        first__title"><h2>La palette du goût<span class="heart"><i class="fa-regular fa-heart"></i></span></h2></div>
 
         <section class="entrees">
-            <div class="entrees-title"><h3>ENTREES</h3></div>
-            <div class="menu__entrees">
+            <div class="menus__title">ENTREES</div>
+            <div class="menus__bloc">
 
-                <div class="entrees__button">
-                    <div class="button_txt">
-                    <p>Fricassée d'escargots</p>
+                <div class="menus__button">
+                    <div class="button__txt">
+                    <h3>Fricassée d'escargots</h3>
                     <p>Au piment d'Espelette</p>
                     </div>
                     <div class="prix">25 <span>€</span></div>
                 </div>
-                <div class="entrees__button">
-                    <div class="button_txt">
-                        <p>Foie gras de canard mi-cuit</p>
+                <div class="menus__button">
+                    <div class="button__txt">
+                        <h3>Foie gras de canard mi-cuit</h3>
                         <p>Et ses copeaux de truffe noire</p>
                         </div>
                         <div class="prix">35 <span>€</span></div>
                 </div>
-                <div class="entrees__button">
-                    <div class="button_txt">
-                        <p>Oeuf au plat</p>
+                <div class="menus__button">
+                    <div class="button__txt">
+                        <h3>Oeuf au plat</h3>
                         <p>Assaisonné à la truffe sur lit de caviar</p>
                         </div>
                         <div class="prix">20 <span>€</span></div>
@@ -54,25 +57,25 @@
         </section>
 
         <section class="plats">
-            <div class="plats__title"><h3>PLATS</h3></div>
-            <div class="menu__plats">
-                <div class="plats__button">
-                    <div class="button_txt">
-                        <p>Folet de boeuf aux herbes</p>
+            <div class="menus__title">PLATS</div>
+            <div class="menus__bloc">
+                <div class="menus__button">
+                    <div class="button__txt">
+                        <h3>Folet de boeuf aux herbes</h3>
                         <p>Accompagné de sa ribambelle de légumes</p>
                         </div>
                         <div class="prix">40 <span>€</span></div>
                 </div>
-                <div class="plats__button">
-                    <div class="button_txt">
-                        <p>Parmentier de queue de boeuf</p>
+                <div class="menus__button">
+                    <div class="button__txt">
+                        <h3>Parmentier de queue de boeuf</h3>
                         <p>A la truffe noire sur sa purée de panais</p>
                         </div>
                         <div class="prix">35 <span>€</span></div>
                 </div>
-                <div class="plats__button">
-                    <div class="button_txt">
-                        <p>Filet de turbot</p>
+                <div class="menus__button">
+                    <div class="button__txt">
+                        <h3>Filet de turbot</h3>
                         <p>Aux agrumes</p>
                         </div>
                         <div class="prix">44 <span>€</span></div>
@@ -81,25 +84,25 @@
         </section>
 
         <section class="desserts">
-            <div class="desserts__title"><h3>DESSERTS</h3></div>
-            <div class="menu__desserts">
-                <div class="desserts__button">
-                    <div class="button_txt">
-                        <p>Paris-Brest</p>
+            <div class="menus__title">DESSERTS</div>
+            <div class="menus__bloc">
+                <div class="menus__button">
+                    <div class="button__txt">
+                        <h3>Paris-Brest</h3>
                         <p>Revisité</p>
                         </div>
                         <div class="prix">18 <span>€</span></div>
                 </div>
-                <div class="desserts__button">
-                    <div class="button_txt">
-                        <p>Macaron au chocolat d'exception</p>
+                <div class="menus__button">
+                    <div class="button__txt">
+                        <h3>Macaron au chocolat d'exception</h3>
                         <p>Et glace à la vanille de Madagascar</p>
                         </div>
                         <div class="prix">22 <span>€</span></div>
                 </div>
-                <div class="desserts__button">
-                    <div class="button_txt">
-                        <p>Mousse au chocolat</p>
+                <div class="menus__button">
+                    <div class="button__txt">
+                        <h3>Mousse au chocolat</h3>
                         <p>Au piment d'Espelette et à la truffe noire</p>
                         </div>
                         <div class="prix">23 <span>€</span></div>
@@ -108,7 +111,7 @@
         </section>
 
         <div class="command">Commander</div>
-        
+    </div>
         
     </main>
 
