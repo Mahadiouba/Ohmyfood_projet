@@ -12,6 +12,7 @@ $radiant-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 button {
@@ -38,6 +39,12 @@ body {
     font-size: 30px;
     font-family: "Roboto", sans-serif;
 }
+
+.localisation i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
 
 /*******Main********/
 
@@ -100,7 +107,11 @@ nav {
 .icon__fonction {
     margin-right: 20px;
     padding-left: 20px;
-    
+    color: rgb(145, 139, 139);
+}
+
+.icon__fonction:hover{
+    color: $second-color;
 }
 
 .fonction__txt {
@@ -116,7 +127,7 @@ nav {
     width: 30px;
     height: 30px;
     margin-left: -50px;
-    
+    color: $background-color2;
 }
 
 .restaurants {
@@ -171,7 +182,8 @@ nav {
 }
 
 .favoris {
-    margin-top: 60px;
+    margin-top: 40px;
+    font-size: 2rem;
 }
 
 /*******Footer********/
@@ -260,7 +272,7 @@ footer i{
     width: 30px;
     height: 30px;
     margin-left: -50px;
-    
+    color: $background-color2;
 }
 /*******Footer********/
 }
@@ -413,14 +425,6 @@ nav {
     margin-left: 20px;
     display: grid;
     grid-template-columns: 1fr 50px;
-}
-
-.favoris {
-    margin-top: 60px;
-    i {
-        width: 20px;
-        height: 20px;
-    }
 }
 
 
