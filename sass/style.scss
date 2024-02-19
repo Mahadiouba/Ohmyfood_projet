@@ -23,7 +23,6 @@ body {
     font-family: "Roboto", sans-serif;
     max-width: 1500px;
 }
-
 /*******Header********/
 .logo {
     text-align: center;
@@ -83,7 +82,8 @@ nav {
 .menu__fonction {
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
     
 }
 
@@ -94,6 +94,7 @@ nav {
     margin: 0px 20px;
     box-shadow: 0px 4px 15px 0px #00000026;
     display: flex;
+    align-items: center;
 }
 
 .icon__fonction {
@@ -105,7 +106,8 @@ nav {
 .fonction__txt {
     font-size: 26px;
     color: black;
-    padding: 0px 20px;
+    /*padding: 0px 20px;*/
+    text-wrap: nowrap;
 }
 
 .numbers {
@@ -134,6 +136,17 @@ nav {
     padding: 0px 5%;
 }
 
+.new {
+    background-color: $thrid-color;
+    padding: 10px;
+    font-weight: 20px;
+    border-radius: 3px;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+}
+
+
 .cards img {
     object-fit: cover;
     height: 200px;
@@ -153,18 +166,13 @@ nav {
 
 .card__txt {
     margin-left: 20px;
-    
+    display: grid;
+    grid-template-columns: 1fr 50px;
 }
 
 .favoris {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 20px;
-    
+    margin-top: 60px;
 }
-
-
 
 /*******Footer********/
 footer {
@@ -199,8 +207,61 @@ footer i{
 
 @media (max-width: 1024px){
 /*******Header********/
+.localisation i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
 
 /*******Main********/
+.fonction {
+    margin: auto;
+    padding-bottom: 10%;
+    width: 90%;
+
+}
+
+.fonction__title {
+    text-align: start;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.menu__fonction {
+    text-align: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button__fonction {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    display: flex;
+   
+}
+
+.icon__fonction {
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.fonction__txt {
+    font-size: 18px;
+    color: black;
+    text-wrap: nowrap;
+}
+
+.numbers {
+    border-radius: 50%;
+    background: #9356DC;
+    width: 30px;
+    height: 30px;
+    margin-left: -50px;
+    
+}
 /*******Footer********/
 }
 
@@ -295,6 +356,7 @@ nav {
     margin: auto;
     box-shadow: 0px 4px 15px 0px #00000026;
     display: flex;
+    align-items: center;
 }
 
 .icon__fonction {
@@ -349,19 +411,19 @@ nav {
 
 .card__txt {
     margin-left: 20px;
-    
+    display: grid;
+    grid-template-columns: 1fr 50px;
 }
 
 .favoris {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 20px;
-    
+    margin-top: 60px;
+    i {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 
- 
 
 /*******Footer********/
 
