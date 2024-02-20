@@ -57,60 +57,60 @@ nav .explorer {
   font-size: larger;
 }
 
-.fonction {
-  margin: auto;
-  padding-bottom: 5%;
-  margin: 0PX 20Px;
+/*.fonction {
+    margin: auto;
+    padding-bottom: 5%;
+    margin: 0PX 20Px;
 }
 
 .fonction__title {
-  text-align: start;
-  font-size: 24px;
+    text-align: start;
+    font-size: 24px;
 }
 
 .menu__fonction {
-  text-align: center;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
 }
 
 .button__fonction {
-  border-radius: 20px;
-  padding: 30px;
-  background-color: #F3F3F3;
-  margin: 0px 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  display: flex;
-  align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #F3F3F3;
+    margin: 0px 20px;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    display: flex;
+    align-items: center;
 }
 
 .icon__fonction {
-  margin-right: 20px;
-  padding-left: 20px;
-  color: rgb(145, 139, 139);
+    margin-right: 20px;
+    padding-left: 20px;
+    color: rgb(145, 139, 139);
 }
 
-.icon__fonction:hover {
-  color: #9356DC;
+.icon__fonction:hover{
+    color: $second-color;
 }
 
 .fonction__txt {
-  font-size: 26px;
-  color: black;
-  /*padding: 0px 20px;*/
-  text-wrap: nowrap;
+    font-size: 26px;
+    color: black;
+    padding: 0px 20px;
+    text-wrap: nowrap;
 }
 
 .numbers {
-  border-radius: 50%;
-  background: #9356DC;
-  width: 30px;
-  height: 30px;
-  margin-left: -50px;
-  color: #FFFFFF;
-}
-
+    border-radius: 50%;
+    background: #9356DC;
+    width: 30px;
+    height: 30px;
+    margin-left: -50px;
+    color: $background-color2;
+} */
 .restaurants {
   background: #F3F3F3;
 }
@@ -195,205 +195,17 @@ footer i {
   margin: 30px;
 }
 
-@media (max-width: 1024px) {
-  /*******Header********/
-  .localisation i {
-    margin-right: 15px;
-    font-size: 25px;
-  }
-  /*******Main********/
-  .fonction {
-    margin: auto;
-    padding-bottom: 10%;
-    width: 90%;
-  }
-  .fonction__title {
-    text-align: start;
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-  .menu__fonction {
-    text-align: center;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-  .button__fonction {
-    border-radius: 20px;
-    padding: 20px;
-    background-color: #F3F3F3;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-    display: flex;
-  }
-  .icon__fonction {
-    margin-right: 20px;
-    padding-left: 20px;
-  }
-  .fonction__txt {
-    font-size: 18px;
-    color: black;
-    text-wrap: nowrap;
-  }
-  .numbers {
-    border-radius: 50%;
-    background: #9356DC;
-    width: 30px;
-    height: 30px;
-    margin-left: -50px;
-    color: #FFFFFF;
-  }
-  /*******Footer********/
-}
-@media (max-width: 767.98px) {
-  /*******Header********/
-  .logo {
-    text-align: center;
-    font-family: "Shrikhand", serif;
-    font-size: 40px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-    padding-bottom: 20px;
-    color: black;
-  }
-  .localisation {
-    text-align: center;
-    padding: 15px;
-    background: #EAEAEA;
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-    font-size: larger;
-    margin-top: -20px;
-    font-family: "Roboto", sans-serif;
-  }
-  .localisation i {
-    margin-right: 10px;
-    font-size: 16px;
-  }
-  /*******Main********/
-  main {
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-  }
-  nav {
-    background-color: #F3F3F3;
-    padding: 10%;
-    text-align: center;
-  }
-  nav .menu__title {
-    font-size: 30px;
-  }
-  nav .menu__sous-titre {
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 100;
-  }
-  nav .explorer {
-    border-radius: 30px;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    padding: 20px;
-    width: 50%;
-    margin: auto;
-    color: white;
-    font-weight: bold;
-    font-size: larger;
-  }
-  .fonction {
-    margin: auto;
-    padding-bottom: 10%;
-    width: 90%;
-  }
-  .fonction__title {
-    text-align: start;
-    font-size: 24px;
-  }
-  .menu__fonction {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .button__fonction {
-    border-radius: 20px;
-    padding: 30px;
-    background-color: #F3F3F3;
-    width: 80%;
-    margin: auto;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-    display: flex;
-    align-items: center;
-  }
-  .icon__fonction {
-    margin-right: 20px;
-    padding-left: 20px;
-  }
-  .fonction__txt {
-    font-size: 23px;
-    color: black;
-  }
-  .numbers {
-    border-radius: 50%;
-    background: #9356DC;
-    width: 30px;
-    height: 30px;
-    margin-left: -50px;
-  }
-  .restaurants {
-    background: #F3F3F3;
-  }
-  .restaurants__title {
-    padding: 15px;
-    font-size: 24px;
-  }
-  .cards img {
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-  }
-  .card__main {
-    background-color: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
-  }
-  .card__txt {
-    margin-left: 20px;
-    display: grid;
-    grid-template-columns: 1fr 50px;
-  }
-  /*******Footer********/
-  footer {
-    background: #353535;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-  }
-  .logo__footer {
-    margin-left: 20px;
-    width: 60%;
-    font-family: "Shrikhand", serif;
-  }
-  .footer__txt {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: inherit;
-  }
-  footer i {
-    margin-right: 15px;
-  }
-  .ft {
-    margin: 30px;
-  }
-}
 /**********Pages Menus**********/
 .hearder__contain {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.logo__menus {
+  text-align: center;
+}
+
 .fa-arrow-left {
   font-size: 50px;
   color: black;
@@ -411,14 +223,14 @@ footer i {
   background: #F6F6F6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 3rem;
   transform: translateY(-50px);
 }
 
 .first__title {
-  font-size: 25px;
+  padding-top: 20px;
   text-align: center;
   font-family: "Shrikhand", serif;
+  text-wrap: nowrap;
 }
 .first__title .heart {
   margin-left: 20px;
@@ -462,19 +274,318 @@ footer i {
 .prix {
   margin-left: 10px;
   margin-bottom: -35px;
+  font-weight: bold;
 }
 
 .command {
   border-radius: 30px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   padding: 20px;
-  width: 20%;
+  width: 130px;
   margin: auto;
   color: white;
   font-weight: bold;
   font-size: larger;
   text-align: center;
   margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+  /*******Header********/
+  .localisation i {
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  /*******Main********/
+  /*.fonction {
+      margin: auto;
+      padding-bottom: 10%;
+      width: 90%;
+
+  }
+
+  .fonction__title {
+      text-align: start;
+      font-size: 20px;
+      padding-bottom: 10px;
+  }
+
+  .menu__fonction {
+      text-align: center;
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .button__fonction {
+      border-radius: 20px;
+      padding: 20px;
+      background-color: #F3F3F3;
+      box-shadow: 0px 4px 15px 0px #00000026;
+      display: flex;
+
+  }
+
+  .icon__fonction {
+      margin-right: 20px;
+      padding-left: 20px;
+  }
+
+  .fonction__txt {
+      font-size: 18px;
+      color: black;
+      text-wrap: nowrap;
+  }
+
+  .numbers {
+      border-radius: 50%;
+      background: #9356DC;
+      width: 30px;
+      height: 30px;
+      margin-left: -50px;
+      color: $background-color2;
+  }*/
+  /*******Footer********/
+}
+@media (max-width: 767.98px) {
+  /*******Header********/
+  .logo {
+    text-align: center;
+    font-family: "Shrikhand", serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: black;
+  }
+  .localisation {
+    text-align: center;
+    padding: 15px;
+    background: #EAEAEA;
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+    font-size: larger;
+    margin-top: -20px;
+    font-family: "Roboto", sans-serif;
+  }
+  .localisation i {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  /*******Main********/
+  main {
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    background: #F6F6F6;
+  }
+  nav {
+    background-color: #F3F3F3;
+    padding: 10%;
+    text-align: center;
+  }
+  nav .menu__title {
+    font-size: 30px;
+  }
+  nav .menu__sous-titre {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  nav .explorer {
+    border-radius: 30px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+  }
+  /*.fonction {
+      margin: auto;
+      padding-bottom: 10%;
+      width: 90%;
+
+  }
+
+  .fonction__title {
+      text-align: start;
+      font-size: 24px;
+  }
+
+  .menu__fonction {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+  }
+
+  .button__fonction {
+      border-radius: 20px;
+      padding: 30px;
+      background-color: #F3F3F3;
+      width: 80%;
+      margin: auto;
+      box-shadow: 0px 4px 15px 0px #00000026;
+      display: flex;
+      align-items: center;
+  }
+
+  .icon__fonction {
+      margin-right: 20px;
+      padding-left: 20px;
+
+  }
+
+  .fonction__txt {
+      font-size: 23px;
+      color: black;
+  }
+
+  .numbers {
+      border-radius: 50%;
+      background: #9356DC;
+      width: 30px;
+      height: 30px;
+      margin-left: -50px;
+
+  }*/
+  .restaurants {
+    background: #F3F3F3;
+  }
+  .restaurants__title {
+    padding: 15px;
+    font-size: 24px;
+  }
+  .cards img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .card__main {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .card__txt {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+  }
+  .command {
+    padding: 20px;
+    width: 100%;
+  }
+  /*******Footer********/
+  footer {
+    background: #353535;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  .logo__footer {
+    margin-left: 20px;
+    width: 60%;
+    font-family: "Shrikhand", serif;
+  }
+  .footer__txt {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+  }
+  footer i {
+    margin-right: 15px;
+  }
+  .ft {
+    margin: 30px;
+  }
+  /**Pages menus version mobile**/
+  .hearder__contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo__menus {
+    text-align: center;
+  }
+  .fa-arrow-left {
+    font-size: 50px;
+    color: black;
+  }
+  .img__background img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .menus {
+    width: 100%;
+    margin: auto;
+    background: #F6F6F6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transform: translateY(-50px);
+  }
+  .first__title {
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Shrikhand", serif;
+    text-wrap: nowrap;
+  }
+  .first__title .heart {
+    margin-left: 20px;
+  }
+  .menus__title::after {
+    display: block;
+    bottom: 20px;
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #99E2D0;
+  }
+  .menus__title {
+    font-weight: 100;
+    padding: 0px 10%;
+    margin: 20px 0px 25px;
+  }
+  .menus__bloc {
+    padding: 0px 10%;
+    margin-bottom: 50px;
+  }
+  .menus__button {
+    background: #FFFFFF;
+    padding: 0px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+  }
+  .button__txt {
+    gap: -5px;
+  }
+  .prix {
+    margin-left: 10px;
+    margin-bottom: -35px;
+    font-weight: bold;
+  }
+  .command {
+    border-radius: 30px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    padding: 20px;
+    width: 130px;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    margin-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
