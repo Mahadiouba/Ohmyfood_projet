@@ -55,6 +55,7 @@ nav .explorer {
   color: white;
   font-weight: bold;
   font-size: larger;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 /*.fonction {
@@ -196,10 +197,10 @@ footer i {
 }
 
 /**********Pages Menus**********/
-.hearder__contain {
+.header__contain {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .logo__menus {
@@ -393,11 +394,12 @@ footer i {
     border-radius: 30px;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     padding: 20px;
-    width: 50%;
+    width: auto;
     margin: auto;
     color: white;
     font-weight: bold;
-    font-size: larger;
+    font-size: 20px;
+    text-wrap: nowrap;
   }
   /*.fonction {
       margin: auto;
@@ -505,13 +507,10 @@ footer i {
     margin: 30px;
   }
   /**Pages menus version mobile**/
-  .hearder__contain {
+  .header__contain {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-  .logo__menus {
-    text-align: center;
+    justify-content: center;
   }
   .fa-arrow-left {
     font-size: 50px;
