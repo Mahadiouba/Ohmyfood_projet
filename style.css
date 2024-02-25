@@ -145,9 +145,24 @@ nav .explorer {
   grid-template-columns: 1fr 50px;
 }
 
-.favoris {
+.favoris i {
+  position: absolute;
   margin-top: 40px;
   font-size: 2rem;
+}
+.favoris .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 350ms ease-in-out;
+}
+.favoris .fa-solid:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.favoris .fa-regular:hover {
+  color: transparent;
 }
 
 /*******Footer********/
@@ -260,24 +275,6 @@ footer i {
   margin-left: 10px;
   margin-bottom: -35px;
   font-weight: bold;
-}
-
-.favoris i {
-  position: absolute;
-}
-.favoris .fa-solid {
-  color: transparent;
-  background-image: linear-gradient(0deg, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 350ms ease-in-out;
-}
-.favoris .fa-solid:hover {
-  opacity: 1;
-  transform: scale(1.2);
-}
-.favoris .fa-regular:hover {
-  color: transparent;
 }
 
 .command {
