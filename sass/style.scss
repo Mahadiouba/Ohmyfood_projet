@@ -247,9 +247,6 @@ footer i{
     margin-left: 20px;
 }
 
-.main__container {
-   
-}
 
 .img__background img{
     width: 100%;
@@ -272,9 +269,30 @@ footer i{
     text-align: center;
     font-family: "Shrikhand", serif;
     text-wrap: nowrap;
-    .heart {
+}
+
+.heart {
+    i {
+        position: absolute;
+        font-size: 2rem;
         margin-left: 20px;
     }
+    .fa-solid {
+        color: transparent;
+        background-image: linear-gradient(0deg,#9356dc,#ff79da);
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 350ms ease-in-out;
+    }
+    .fa-solid:hover { 
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    .fa-regular:hover {
+        color: transparent;
+        
+    }
+    
 }
 
 .menus__title::after {
@@ -550,9 +568,30 @@ footer i{
     display: flex;
     margin-left: 5%;
     text-wrap: nowrap;
-    .heart {
+}
+
+.heart {
+    i {
+        position: absolute;
+        font-size: 2rem;
         margin-left: 20px;
     }
+    .fa-solid {
+        color: transparent;
+        background-image: linear-gradient(0deg,#9356dc,#ff79da);
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 350ms ease-in-out;
+    }
+    .fa-solid:hover { 
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    .fa-regular:hover {
+        color: transparent;
+        
+    }
+    
 }
 
 .menus__title::after {

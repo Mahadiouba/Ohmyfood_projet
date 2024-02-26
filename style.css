@@ -232,8 +232,25 @@ footer i {
   font-family: "Shrikhand", serif;
   text-wrap: nowrap;
 }
-.first__title .heart {
+
+.heart i {
+  position: absolute;
+  font-size: 2rem;
   margin-left: 20px;
+}
+.heart .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 350ms ease-in-out;
+}
+.heart .fa-solid:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.heart .fa-regular:hover {
+  color: transparent;
 }
 
 .menus__title::after {
@@ -455,8 +472,24 @@ footer i {
     margin-left: 5%;
     text-wrap: nowrap;
   }
-  .first__title .heart {
+  .heart i {
+    position: absolute;
+    font-size: 2rem;
     margin-left: 20px;
+  }
+  .heart .fa-solid {
+    color: transparent;
+    background-image: linear-gradient(0deg, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 350ms ease-in-out;
+  }
+  .heart .fa-solid:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  .heart .fa-regular:hover {
+    color: transparent;
   }
   .menus__title::after {
     display: block;
