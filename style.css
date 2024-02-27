@@ -5,42 +5,6 @@ a {
   color: black;
 }
 
-.loader__container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader--hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loader__container::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid #FFFFFF;
-  border-top-color: #99E2D0;
-  border-radius: 50%;
-  animation: loading 0.75s;
-  transition: opacity 0.75s, visibility 0.75s;
-}
-
-@keyframes loading {
-  from {
-    transform: rotate 0turn;
-    to {
-      transform: rotate(1turn);
-    }
-  }
-}
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -93,6 +57,52 @@ nav .explorer {
   font-weight: bold;
   font-size: larger;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.fonctionnement {
+  padding: 10px;
+}
+
+.fonction__icon {
+  color: #7e7e7e;
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.fonction__container {
+  margin: auto;
+  max-width: 1440px;
+}
+
+.fonction__menus {
+  list-style: none;
+  padding: 25px 0 0 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.fonction__number {
+  background-color: #9356dc;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  padding: 4px 9px 4px 9px;
+  border-radius: 50px;
+  transform: translateX(-185%);
+}
+
+.fonction__menu {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 28px 35px;
+  width: 100%;
+  display: flex;
+  margin: 0px 14px;
 }
 
 .restaurants {
@@ -195,20 +205,27 @@ footer i {
 }
 
 /**********Pages Menus**********/
-.header__contain {
+.header {
+  height: 63px;
+  background-color: #fff;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
 }
 
-.logo__menus {
-  font-family: "Shrikhand";
+.header__arrow {
+  position: absolute;
+  color: #353535;
+  font-size: 18px;
+  left: 25px;
 }
 
-.fa-arrow-left {
+.header__logo {
+  font-family: "Shrikhand", cursive;
   font-size: 30px;
-  color: black;
-  margin-left: 20px;
+  text-decoration: none;
+  color: #101010;
 }
 
 .img__background img {
@@ -294,6 +311,20 @@ footer i {
   font-weight: bold;
 }
 
+.menu__check {
+  background-color: #99E2D0;
+  transition: margin-right 0.5s;
+  width: 3rem;
+  margin-right: -5.5rem;
+  height: 4rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 13px;
+}
+.menu__check .fa-circle-check {
+  color: #FFFFFF;
+}
+
 .command {
   border-radius: 30px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -308,15 +339,6 @@ footer i {
   margin-top: 50px;
 }
 
-@media (max-width: 1024px) {
-  /*******Header********/
-  .localisation i {
-    margin-right: 15px;
-    font-size: 25px;
-  }
-  /*******Main********/
-  /*******Footer********/
-}
 @media (max-width: 767.98px) {
   /*******Header********/
   .logo {
@@ -370,6 +392,38 @@ footer i {
     font-weight: bold;
     font-size: 20px;
     text-wrap: nowrap;
+  }
+  .fonction__menus {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .fonction__menu {
+    width: auto;
+    margin: 0 0 0 14px;
+  }
+  .fonctionnement {
+    padding: 20px;
+    background-color: #FFFFFF;
+  }
+  .fonction__icon {
+    color: #7e7e7e;
+    font-size: 20px;
+    margin-right: 25px;
+  }
+  .fonction__container {
+    margin: auto;
+    max-width: 1440px;
+  }
+  .fonction__number {
+    background-color: #9356dc;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    padding: 4px 9px 4px 9px;
+    border-radius: 50px;
+    -webkit-transform: translateX(-185%);
+    -ms-transform: translateX(-185%);
+    transform: translateX(-185%);
   }
   .restaurants {
     background: #F3F3F3;
@@ -444,15 +498,25 @@ footer i {
     margin: 30px;
   }
   /**Pages menus version mobile**/
-  .header__contain {
+  .header {
+    height: 63px;
+    background-color: #fff;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    position: relative;
   }
-  .fa-arrow-left {
-    font-size: 25px;
-    color: black;
-    margin-left: 20px;
+  .header__arrow {
+    position: absolute;
+    color: #353535;
+    font-size: 18px;
+    left: 25px;
+  }
+  .header__logo {
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    text-decoration: none;
+    color: #101010;
   }
   .img__background img {
     width: 100%;
