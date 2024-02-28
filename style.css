@@ -190,7 +190,6 @@ footer {
 
 .logo__footer {
   margin-left: 20px;
-  width: 60%;
   font-family: "Shrikhand", serif;
 }
 
@@ -207,6 +206,11 @@ footer i {
 
 .ft {
   margin: 30px;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-wrap: nowrap;
 }
 
 /**********Pages Menus**********/
@@ -490,7 +494,9 @@ footer i {
     margin-right: 15px;
   }
   .ft {
-    margin: 30px;
+    align-items: inherit;
+    display: flex;
+    flex-direction: column;
   }
   /**Pages menus version mobile**/
   .header {
