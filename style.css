@@ -1,5 +1,67 @@
 /*******General********/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+/* *,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+} */
+/*.loader-container {
+    background: rgba(255, 255, 255, .95);
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 7px solid transparent;
+    border-top-color: $thrid-color;
+
+}
+
+.loader::before, .loader::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 7px solid transparent;
+}
+
+.loader::before {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top-color: rgb(224, 137, 202);
+    animation: spin 3s linear infinite;
+}
+
+.loader::after {
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border-top-color: $second-color;
+    animation: spin 1.5s linear infinite; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {transform: rotate(360deg);}
+}
+*/
 a {
   text-decoration: none;
   color: black;
@@ -57,6 +119,10 @@ nav .explorer {
   font-weight: bold;
   font-size: larger;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+nav .explorer:hover {
+  padding: 22px;
+  width: 287px;
 }
 
 .fonctionnement {
@@ -299,25 +365,46 @@ footer i {
   margin-bottom: 50px;
 }
 
-.menus__button {
-  background: #FFFFFF;
-  padding: 0px 10px;
-  border-radius: 20px;
+.menus-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
-  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+  align-items: center;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
-.button__txt {
-  gap: -5px;
+.text-content {
+  padding-left: 7px;
 }
 
 .prix {
-  margin-left: 10px;
-  margin-bottom: -35px;
+  display: flex;
+  align-items: center;
+  transform: translateX(98px);
+  transition: all 1s;
   font-weight: bold;
+}
+.prix:hover {
+  transform: translateX(0px);
+}
+.prix p {
+  margin-right: 10px;
+}
+.prix span {
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  padding: 35px;
+}
+
+.fa-circle-check {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+.fa-circle-check:hover {
+  transform: rotate(2turn);
 }
 
 .command {
@@ -327,11 +414,15 @@ footer i {
   padding: 20px;
   width: 130px;
   margin: auto;
-  color: white;
+  color: #FFFFFF;
   font-weight: bold;
   font-size: larger;
   text-align: center;
   margin-top: 50px;
+}
+.command:hover {
+  width: 132px;
+  padding: 22px;
 }
 
 @media (max-width: 767.98px) {
@@ -388,6 +479,9 @@ footer i {
     font-weight: bold;
     font-size: 20px;
     text-wrap: nowrap;
+  }
+  nav .explorer:hover {
+    width: inherit;
   }
   .fonction__menus {
     flex-direction: column;
@@ -573,23 +667,44 @@ footer i {
     padding: 0px 10%;
     margin-bottom: 50px;
   }
-  .menus__button {
-    background: #FFFFFF;
-    padding: 0px 10px;
-    border-radius: 20px;
+  .menus-content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+    align-items: center;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    margin-bottom: 10px;
   }
-  .button__txt {
-    gap: -5px;
+  .text-content {
+    padding-left: 7px;
   }
   .prix {
-    margin-left: 10px;
-    margin-bottom: -35px;
+    display: flex;
+    align-items: center;
+    transform: translateX(98px);
+    transition: all 1s;
     font-weight: bold;
+    text-wrap: nowrap;
+  }
+  .prix:hover {
+    transform: translateX(0px);
+  }
+  .prix p {
+    margin-right: 10px;
+  }
+  .prix span {
+    border-radius: 0 15px 15px 0;
+    background-color: #99E2D0;
+    padding: 35px;
+  }
+  .fa-circle-check {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    transition: all 1s;
+  }
+  .fa-circle-check:hover {
+    transform: rotate(2turn);
   }
   .command {
     border-radius: 30px;
