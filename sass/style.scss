@@ -8,70 +8,69 @@ $second-color: #9356DC;
 $thrid-color: #99E2D0;
 $radiant-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 
-/* *,
-::before,
-::after {
-    box-sizing: border-box;
-    margin: auto;
-    padding: auto;
-} */
-
-/*.loader-container {
-    background: rgba(255, 255, 255, .95);
-    border-radius: 5px;
+.loader {
+    background-color: $background-color;
+    display: grid;
+    place-items: center;
+    height: 100vh;
     position: fixed;
+    inset: 0;
     z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 0.9;
+    animation: disappear 200ms 3s forwards;
 }
 
-.loader {
+.loader-content {
     display: block;
     position: relative;
-    width: 250px;
     height: 250px;
+    width: 250px;
     border-radius: 50%;
     border: 7px solid transparent;
-    border-top-color: $thrid-color;
-    
+    border-top-color: #5bcdb4;
+    animation: spin 2s linear infinite;
 }
 
-.loader::before, .loader::after {
+.loader-content::before, .loader-content::after {
     content: "";
     position: absolute;
     border-radius: 50%;
     border: 7px solid transparent;
 }
 
-.loader::before {
+.loader-content::before {
     top: 10px;
     left: 10px;
-    right: 10px;
     bottom: 10px;
-    border-top-color: rgb(224, 137, 202);
+    right: 10px;
+    border-top-color: #9356dc;
     animation: spin 3s linear infinite;
 }
 
-.loader::after {
+.loader-content::after {
     top: 25px;
     left: 25px;
-    right: 25px;
     bottom: 25px;
-    border-top-color: $second-color;
-    animation: spin 1.5s linear infinite; 
+    right: 25px;
+    border-top-color: #FF79DA;
+    animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
+    0% { 
+        transform: rotate(0deg) 
     }
-    100% {transform: rotate(360deg);}
+    100% { 
+        transform: rotate(360deg)
+    }
 }
-*/
 
+@keyframes disappear {
+
+    to {
+        transform: scale(0);
+    }
+} 
 
 a {
     text-decoration: none;
@@ -138,8 +137,7 @@ nav {
         font-size: larger;
         box-shadow: 0px 4px 10px 0px #00000040;
         &:hover {
-            padding: 22px;
-            width: 287px;
+            box-shadow: 0.35rem 0.35rem 20px rgba(0,0,0,.35);
         }
     }
 }
@@ -278,6 +276,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     color: #ffff;
+    
 }
 
 .logo__footer {
@@ -399,6 +398,24 @@ footer i{
     margin-bottom: 50px;
 }
 
+.menus__bloc:nth-child(1) {
+    animation-delay: 0,2s;
+}
+
+.menus__bloc:nth-child(2) {
+    animation-delay: 0,4s;
+}
+
+.menus__bloc:nth-child(3) {
+    animation-delay: 0,6s;
+}
+
+.menus__bloc:nth-child(4) {
+    animation-delay: 0,8s;
+}
+
+
+
 .menus-content {
     display: flex;
     justify-content: space-between;
@@ -411,6 +428,16 @@ footer i{
 
 .text-content {
     padding-left: 7px;
+    h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+white-space: initial;
+    }
+    p{
+        overflow: hidden;
+text-overflow: ellipsis;
+white-space: initial;
+    }
 }
 
 .prix {
@@ -425,6 +452,7 @@ footer i{
 
     p {
         margin-right: 10px;
+        text-overflow: ellipsis;
     }
 
     span {
@@ -456,8 +484,7 @@ footer i{
     text-align: center;
     margin-top: 50px;
         &:hover {
-            width: 132px;
-            padding: 22px;
+            
         }
 }
 
@@ -526,8 +553,7 @@ nav {
         font-size: 20px;
         text-wrap: nowrap;
             &:hover {
-    
-                width: inherit;
+                box-shadow: 0.35rem 0.35rem 20px rgba(0,0,0,.35);
             }
     }
 }
@@ -540,6 +566,9 @@ nav {
 .fonction__menu {
     width: auto;
     margin: 0 0 0 14px;
+    span {
+        text-wrap: nowrap;
+    }
 }
 
 .fonctionnement {
@@ -660,6 +689,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: inherit;
+    
 }
 
 footer i{
@@ -776,6 +806,12 @@ footer i{
 
 .text-content {
     padding-left: 7px;
+    overflow: hidden;
+    h3, p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
 }
 
 .prix {
@@ -820,6 +856,7 @@ footer i{
     font-size: larger;
     text-align: center;
     margin-top: 50px;
+    
 }
   
 

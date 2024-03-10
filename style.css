@@ -1,67 +1,66 @@
 /*******General********/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-/* *,
-::before,
-::after {
-    box-sizing: border-box;
-    margin: auto;
-    padding: auto;
-} */
-/*.loader-container {
-    background: rgba(255, 255, 255, .95);
-    border-radius: 5px;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .loader {
-    display: block;
-    position: relative;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 7px solid transparent;
-    border-top-color: $thrid-color;
-
+  background-color: #F6F6F6;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 3s forwards;
 }
 
-.loader::before, .loader::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    border: 7px solid transparent;
+.loader-content {
+  display: block;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: #5bcdb4;
+  animation: spin 2s linear infinite;
 }
 
-.loader::before {
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border-top-color: rgb(224, 137, 202);
-    animation: spin 3s linear infinite;
+.loader-content::before, .loader-content::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 7px solid transparent;
 }
 
-.loader::after {
-    top: 25px;
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
-    border-top-color: $second-color;
-    animation: spin 1.5s linear infinite; 
+.loader-content::before {
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  border-top-color: #9356dc;
+  animation: spin 3s linear infinite;
+}
+
+.loader-content::after {
+  top: 25px;
+  left: 25px;
+  bottom: 25px;
+  right: 25px;
+  border-top-color: #FF79DA;
+  animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-*/
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
 a {
   text-decoration: none;
   color: black;
@@ -121,8 +120,7 @@ nav .explorer {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 nav .explorer:hover {
-  padding: 22px;
-  width: 287px;
+  box-shadow: 0.35rem 0.35rem 20px rgba(0, 0, 0, 0.35);
 }
 
 .fonctionnement {
@@ -365,6 +363,22 @@ footer i {
   margin-bottom: 50px;
 }
 
+.menus__bloc:nth-child(1) {
+  animation-delay: 0, 2s;
+}
+
+.menus__bloc:nth-child(2) {
+  animation-delay: 0, 4s;
+}
+
+.menus__bloc:nth-child(3) {
+  animation-delay: 0, 6s;
+}
+
+.menus__bloc:nth-child(4) {
+  animation-delay: 0, 8s;
+}
+
 .menus-content {
   display: flex;
   justify-content: space-between;
@@ -377,6 +391,16 @@ footer i {
 
 .text-content {
   padding-left: 7px;
+}
+.text-content h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+}
+.text-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
 }
 
 .prix {
@@ -391,6 +415,7 @@ footer i {
 }
 .prix p {
   margin-right: 10px;
+  text-overflow: ellipsis;
 }
 .prix span {
   border-radius: 0 15px 15px 0;
@@ -420,11 +445,6 @@ footer i {
   text-align: center;
   margin-top: 50px;
 }
-.command:hover {
-  width: 132px;
-  padding: 22px;
-}
-
 @media (max-width: 767.98px) {
   /*******Header********/
   .logo {
@@ -481,7 +501,7 @@ footer i {
     text-wrap: nowrap;
   }
   nav .explorer:hover {
-    width: inherit;
+    box-shadow: 0.35rem 0.35rem 20px rgba(0, 0, 0, 0.35);
   }
   .fonction__menus {
     flex-direction: column;
@@ -490,6 +510,9 @@ footer i {
   .fonction__menu {
     width: auto;
     margin: 0 0 0 14px;
+  }
+  .fonction__menu span {
+    text-wrap: nowrap;
   }
   .fonctionnement {
     padding: 20px;
@@ -678,6 +701,11 @@ footer i {
   }
   .text-content {
     padding-left: 7px;
+    overflow: hidden;
+  }
+  .text-content h3, .text-content p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .prix {
     display: flex;
