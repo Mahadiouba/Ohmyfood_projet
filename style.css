@@ -365,27 +365,29 @@ footer i {
 }
 
 .menus__bloc:nth-child(1) {
-  animation: apparition 0.2s ease forwards;
+  animation-delay: 0.3s;
 }
 
 .menus__bloc:nth-child(2) {
-  animation: apparition 0.4s ease forwards;
+  animation-delay: 0.6s;
 }
 
 .menus__bloc:nth-child(3) {
-  animation: apparition 0.6s ease forwards;
+  animation-delay: 0.9s;
 }
 
 .menus__bloc:nth-child(4) {
-  animation: apparition 0.8s ease forwards;
+  animation-delay: 0.12s;
 }
 
-@keyframes apparition {
-  from {
+@keyframes menus__bloc {
+  0% {
     opacity: 0;
+    transform: translateY(5px);
   }
-  to {
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .menus-content {
@@ -396,6 +398,7 @@ footer i {
   background-color: #FFFFFF;
   overflow: hidden;
   margin-bottom: 10px;
+  animation: menus__bloc 2s ease both;
 }
 
 .text-content {
