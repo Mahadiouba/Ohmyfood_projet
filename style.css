@@ -77,27 +77,38 @@ body {
 .logo {
   text-align: center;
   font-family: "Shrikhand", serif;
-  font-size: 50px;
+  font-size: 40px;
+  padding-bottom: 20px;
   color: black;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .localisation {
   text-align: center;
-  padding: 3px;
+  padding: 15px;
   background: #EAEAEA;
-  font-size: 30px;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  font-size: larger;
+  margin-top: -20px;
   font-family: "Roboto", sans-serif;
 }
 
 .localisation i {
-  margin-right: 15px;
-  font-size: 25px;
+  margin-right: 10px;
+  font-size: 16px;
 }
 
 /*******Main********/
+main {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  background: #F6F6F6;
+}
+
 nav {
   background-color: #F3F3F3;
-  padding: 5%;
+  padding: 10%;
   text-align: center;
 }
 nav .menu__title {
@@ -111,13 +122,14 @@ nav .menu__sous-titre {
 nav .explorer {
   border-radius: 30px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   padding: 20px;
-  width: 280px;
+  width: auto;
   margin: auto;
   color: white;
   font-weight: bold;
-  font-size: larger;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  font-size: 20px;
+  white-space: nowrap;
 }
 nav .explorer:hover {
   box-shadow: 0.35rem 0.35rem 20px rgba(0, 0, 0, 0.35);
@@ -125,6 +137,7 @@ nav .explorer:hover {
 
 .fonctionnement {
   padding: 10px;
+  background-color: #FFFFFF;
 }
 
 .fonction__icon {
@@ -136,19 +149,12 @@ nav .explorer:hover {
   color: #9356DC;
 }
 
-.fonction__container {
-  margin: auto;
-  max-width: 1440px;
-  /*padding: 0px 10%;*/
-}
-
 .fonction__menus {
   list-style: none;
   padding: 25px 0 0 0;
   margin: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 25px;
   margin-bottom: 30px;
 }
@@ -168,26 +174,20 @@ nav .explorer:hover {
   border-radius: 20px;
   font-weight: 500;
   padding: 28px 35px;
-  width: 100%;
+  width: auto;
   display: flex;
   margin: 0px 14px;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
 
 .restaurants {
   background: #F3F3F3;
 }
-.restaurants .cards {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .restaurants__title {
   padding: 15px;
   font-size: 24px;
-}
-
-.resto_bloc {
-  padding: 0px 5%;
 }
 
 .new {
@@ -201,6 +201,9 @@ nav .explorer:hover {
   right: 30px;
 }
 
+.cards {
+  padding-bottom: 20px;
+}
 .cards img {
   object-fit: cover;
   height: 200px;
@@ -213,7 +216,7 @@ nav .explorer:hover {
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  width: 40%;
+  width: 90%;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -222,6 +225,12 @@ nav .explorer:hover {
   margin-left: 20px;
   display: grid;
   grid-template-columns: 1fr 50px;
+  padding-bottom: 30px;
+}
+.card__txt p {
+  position: absolute;
+  bottom: 0;
+  top: auto;
 }
 
 .favoris i {
@@ -232,7 +241,6 @@ nav .explorer:hover {
 .favoris .fa-solid {
   color: transparent;
   background-image: linear-gradient(0deg, #9356dc, #ff79da);
-  -webkit-background-clip: text;
   background-clip: text;
   opacity: 0;
   transition: all 350ms ease-in-out;
@@ -245,6 +253,11 @@ nav .explorer:hover {
   color: transparent;
 }
 
+.command {
+  padding: 20px;
+  width: 100%;
+}
+
 /*******Footer********/
 footer {
   background: #353535;
@@ -255,14 +268,16 @@ footer {
 
 .logo__footer {
   margin-left: 20px;
+  width: 60%;
   font-family: "Shrikhand", serif;
 }
 
 .footer__txt {
   font-family: "Roboto", sans-serif;
   display: flex;
-  justify-content: flex-end;
-  gap: 30px;
+  flex-direction: column;
+  gap: inherit;
+  padding: 0px 15px;
 }
 
 footer i {
@@ -270,15 +285,12 @@ footer i {
 }
 
 .ft {
-  margin: 30px;
-  margin: 30px;
+  align-items: inherit;
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  white-space: nowrap;
+  flex-direction: column;
 }
 
-/**********Pages Menus**********/
+/**Pages menus version mobile**/
 .header {
   height: 63px;
   background-color: #fff;
@@ -309,7 +321,7 @@ footer i {
 }
 
 .menus {
-  width: 80%;
+  width: 100%;
   margin: auto;
   background: #F6F6F6;
   border-top-left-radius: 40px;
@@ -318,10 +330,10 @@ footer i {
 }
 
 .first__title {
-  padding-top: 20px;
-  text-align: center;
-  font-family: "Shrikhand", serif;
+  display: flex;
+  margin-left: 5%;
   white-space: nowrap;
+  font-family: "Shrikhand";
 }
 
 .heart i {
@@ -332,7 +344,7 @@ footer i {
 .heart .fa-solid {
   color: transparent;
   background-image: linear-gradient(0deg, #9356dc, #ff79da);
-  -webkit-background-clip: text;
+  background-clip: text;
   opacity: 0;
   transition: all 350ms ease-in-out;
 }
@@ -365,19 +377,19 @@ footer i {
 }
 
 .menus__bloc:nth-child(1) {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 .menus__bloc:nth-child(2) {
-  animation-delay: 0.6s;
+  animation-delay: 0.4s;
 }
 
 .menus__bloc:nth-child(3) {
-  animation-delay: 0.9s;
+  animation-delay: 0.6s;
 }
 
 .menus__bloc:nth-child(4) {
-  animation-delay: 0.12s;
+  animation-delay: 0.8s;
 }
 
 @keyframes menus__bloc {
@@ -403,16 +415,11 @@ footer i {
 
 .text-content {
   padding-left: 7px;
-}
-.text-content h3 {
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: initial;
 }
-.text-content p {
-  overflow: hidden;
+.text-content h3, .text-content p {
   text-overflow: ellipsis;
-  white-space: initial;
+  white-space: nowrap;
 }
 
 .prix {
@@ -421,13 +428,13 @@ footer i {
   transform: translateX(98px);
   transition: all 1s;
   font-weight: bold;
+  white-space: nowrap;
 }
 .prix:hover {
   transform: translateX(0px);
 }
 .prix p {
   margin-right: 10px;
-  text-overflow: ellipsis;
 }
 .prix span {
   border-radius: 0 15px 15px 0;
@@ -447,11 +454,10 @@ footer i {
 .command {
   border-radius: 30px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   padding: 20px;
   width: 130px;
   margin: auto;
-  color: #FFFFFF;
+  color: white;
   font-weight: bold;
   font-size: larger;
   text-align: center;
@@ -461,40 +467,24 @@ footer i {
   box-shadow: 0.35rem 0.35rem 20px rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
   /*******Header********/
   .logo {
-    text-align: center;
-    font-family: "Shrikhand", serif;
-    font-size: 40px;
-    padding-bottom: 20px;
-    color: black;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+    font-size: 50px;
+    box-shadow: inherit;
   }
   .localisation {
-    text-align: center;
-    padding: 15px;
-    background: #EAEAEA;
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-    font-size: larger;
-    margin-top: -20px;
-    font-family: "Roboto", sans-serif;
+    padding: 3px;
+    font-size: 30px;
+    box-shadow: inherit;
   }
   .localisation i {
-    margin-right: 10px;
-    font-size: 16px;
+    margin-right: 15px;
+    font-size: 25px;
   }
   /*******Main********/
-  main {
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-    background: #F6F6F6;
-  }
   nav {
-    background-color: #F3F3F3;
-    padding: 10%;
-    text-align: center;
+    padding: 5%;
   }
   nav .menu__title {
     font-size: 30px;
@@ -505,34 +495,7 @@ footer i {
     font-weight: 100;
   }
   nav .explorer {
-    border-radius: 30px;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    width: auto;
-    margin: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    white-space: nowrap;
-  }
-  nav .explorer:hover {
-    box-shadow: 0.35rem 0.35rem 20px rgba(0, 0, 0, 0.35);
-  }
-  .fonction__menus {
-    flex-direction: column;
-    margin-bottom: 30px;
-  }
-  .fonction__menu {
-    width: auto;
-    margin: 0 0 0 14px;
-  }
-  .fonction__menu span {
-    white-space: nowrap;
-  }
-  .fonctionnement {
-    padding: 20px;
-    background-color: #FFFFFF;
+    width: 280px;
   }
   .fonction__icon {
     color: #7e7e7e;
@@ -542,229 +505,59 @@ footer i {
   .fonction__icon:hover {
     color: #9356DC;
   }
+  .fonction__menus {
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+  }
   .fonction__container {
     margin: auto;
     max-width: 1440px;
   }
-  .fonction__number {
-    background-color: #9356dc;
-    color: #fff;
-    font-size: 14px;
-    position: absolute;
-    padding: 4px 9px 4px 9px;
-    border-radius: 50px;
-    transform: translateX(-185%);
-  }
-  .restaurants {
-    background: #F3F3F3;
-  }
-  .restaurants__title {
-    padding: 15px;
-    font-size: 24px;
-  }
-  .cards img {
-    object-fit: cover;
-    height: 200px;
+  .fonction__menu {
     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    margin: inherit;
+    white-space: inherit;
+    margin: 0px 14px;
+  }
+  .restaurants .cards {
+    display: flex;
+    flex-wrap: wrap;
   }
   .card__main {
-    background-color: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
-  }
-  .card__txt {
-    margin-left: 20px;
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    padding-bottom: 30px;
-  }
-  .card__txt p {
-    position: absolute;
-    bottom: 0;
-    top: auto;
-  }
-  .favoris i {
-    position: absolute;
-  }
-  .favoris .fa-solid {
-    color: transparent;
-    background-image: linear-gradient(0deg, #9356dc, #ff79da);
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: all 350ms ease-in-out;
-  }
-  .favoris .fa-solid:hover {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  .favoris .fa-regular:hover {
-    color: transparent;
-  }
-  .command {
-    padding: 20px;
-    width: 100%;
+    width: 40%;
   }
   /*******Footer********/
   footer {
-    background: #353535;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-  }
-  .logo__footer {
-    margin-left: 20px;
-    width: 60%;
-    font-family: "Shrikhand", serif;
+    display: flex;
+    justify-content: flex-end;
   }
   .footer__txt {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: inherit;
+    gap: 30px;
+    flex-direction: inherit;
   }
   footer i {
     margin-right: 15px;
   }
   .ft {
-    align-items: inherit;
-    display: flex;
-    flex-direction: column;
-  }
-  /**Pages menus version mobile**/
-  .header {
-    height: 63px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
+    margin: 30px;
     align-items: center;
-    position: relative;
+    flex-direction: row-reverse;
+    white-space: nowrap;
   }
-  .header__arrow {
-    position: absolute;
-    color: #353535;
-    font-size: 18px;
-    left: 25px;
-  }
-  .header__logo {
-    font-family: "Shrikhand", cursive;
-    font-size: 30px;
-    text-decoration: none;
-    color: #101010;
-  }
-  .img__background img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  /**********Pages Menus**********/
+  .main__container {
+    background: #FFFFFF;
   }
   .menus {
-    width: 100%;
-    margin: auto;
-    background: #F6F6F6;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    transform: translateY(-50px);
+    width: 80%;
+    padding-bottom: 40px;
   }
   .first__title {
-    display: flex;
-    margin-left: 5%;
-    white-space: nowrap;
-  }
-  .heart i {
-    position: absolute;
-    font-size: 2rem;
-    margin-left: 20px;
-  }
-  .heart .fa-solid {
-    color: transparent;
-    background-image: linear-gradient(0deg, #9356dc, #ff79da);
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: all 350ms ease-in-out;
-  }
-  .heart .fa-solid:hover {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  .heart .fa-regular:hover {
-    color: transparent;
-  }
-  .menus__title::after {
-    display: block;
-    bottom: 20px;
-    content: "";
-    width: 40px;
-    height: 4px;
-    background-color: #99E2D0;
-  }
-  .menus__title {
-    font-weight: 100;
-    padding: 0px 10%;
-    margin: 20px 0px 25px;
-  }
-  .menus__bloc {
-    padding: 0px 10%;
-    margin-bottom: 50px;
-  }
-  .menus-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 15px;
-    background-color: #FFFFFF;
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-  .text-content {
-    padding-left: 7px;
-    overflow: hidden;
-  }
-  .text-content h3, .text-content p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .prix {
-    display: flex;
-    align-items: center;
-    transform: translateX(98px);
-    transition: all 1s;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-  .prix:hover {
-    transform: translateX(0px);
-  }
-  .prix p {
-    margin-right: 10px;
-  }
-  .prix span {
-    border-radius: 0 15px 15px 0;
-    background-color: #99E2D0;
-    padding: 35px;
-  }
-  .fa-circle-check {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    transition: all 1s;
-  }
-  .fa-circle-check:hover {
-    transform: rotate(2turn);
+    padding-top: 20px;
   }
   .command {
-    border-radius: 30px;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    padding: 20px;
-    width: 130px;
-    margin: auto;
-    color: white;
-    font-weight: bold;
-    font-size: larger;
-    text-align: center;
-    margin-top: 50px;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   }
   .command:hover {
     box-shadow: 0.35rem 0.35rem 20px rgba(0, 0, 0, 0.35);
