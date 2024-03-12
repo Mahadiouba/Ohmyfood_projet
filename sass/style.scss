@@ -495,9 +495,9 @@ footer i{
     font-size: larger;
     text-align: center;
     margin-top: 50px;
-        &:hover {
-            
-        }
+    &:hover {
+        box-shadow: 0.35rem 0.35rem 20px rgba(0,0,0,.35);
+    }
 }
 
 
@@ -870,6 +870,9 @@ footer i{
     font-size: larger;
     text-align: center;
     margin-top: 50px;
+    &:hover {
+        box-shadow: 0.35rem 0.35rem 20px rgba(0,0,0,.35);
+    }
     
 }
   

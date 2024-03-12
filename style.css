@@ -457,6 +457,10 @@ footer i {
   text-align: center;
   margin-top: 50px;
 }
+.command:hover {
+  box-shadow: 0.35rem 0.35rem 20px rgba(0, 0, 0, 0.35);
+}
+
 @media (max-width: 767.98px) {
   /*******Header********/
   .logo {
@@ -761,6 +765,9 @@ footer i {
     font-size: larger;
     text-align: center;
     margin-top: 50px;
+  }
+  .command:hover {
+    box-shadow: 0.35rem 0.35rem 20px rgba(0, 0, 0, 0.35);
   }
 }
 
