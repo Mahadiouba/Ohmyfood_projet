@@ -8,6 +8,7 @@ $second-color: #9356DC;
 $thrid-color: #99E2D0;
 $radiant-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 
+
 .loader {
     background-color: $background-color;
     display: grid;
@@ -214,7 +215,7 @@ nav {
     background-color: $thrid-color;
     color: #008766;
     padding: 10px;
-    font-weight: 20px;
+    font-weight: 400;
     border-radius: 3px;
     position: absolute;
     top: 0px;
@@ -255,6 +256,7 @@ nav {
         color: transparent;
         background-image: linear-gradient(0deg,#9356dc,#ff79da);
         -webkit-background-clip: text;
+        background-clip: text;
         opacity: 0;
         transition: all 350ms ease-in-out;
     }
@@ -302,7 +304,7 @@ footer i{
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 /**********Pages Menus**********/
@@ -351,7 +353,7 @@ footer i{
     padding-top: 20px;
     text-align: center;
     font-family: "Shrikhand", serif;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .heart {
@@ -399,22 +401,29 @@ footer i{
 }
 
 .menus__bloc:nth-child(1) {
-    animation-delay: 0,2s;
+    animation: apparition 0.2s ease forwards;
 }
 
 .menus__bloc:nth-child(2) {
-    animation-delay: 0,4s;
+    animation: apparition 0.4s ease forwards;
 }
 
 .menus__bloc:nth-child(3) {
-    animation-delay: 0,6s;
+    animation: apparition 0.6s ease forwards;
 }
 
 .menus__bloc:nth-child(4) {
-    animation-delay: 0,8s;
+    animation: apparition 0.8s ease forwards;
+} 
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-
-
 
 .menus-content {
     display: flex;
@@ -551,7 +560,7 @@ nav {
         color: white;
         font-weight: bold;
         font-size: 20px;
-        text-wrap: nowrap;
+        white-space: nowrap;
             &:hover {
                 box-shadow: 0.35rem 0.35rem 20px rgba(0,0,0,.35);
             }
@@ -567,7 +576,7 @@ nav {
     width: auto;
     margin: 0 0 0 14px;
     span {
-        text-wrap: nowrap;
+        white-space: nowrap;
     }
 }
 
@@ -598,8 +607,6 @@ nav {
     position: absolute;
     padding: 4px 9px 4px 9px;
     border-radius: 50px;
-    -webkit-transform: translateX(-185%);
-    -ms-transform: translateX(-185%);
     transform: translateX(-185%);
 }
 
@@ -634,12 +641,18 @@ nav {
     margin-left: 20px;
     display: grid;
     grid-template-columns: 1fr 50px;
+    padding-bottom: 30px;
+    p {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+    }
 }
+
 
 .favoris {
     i {
         position: absolute;
-
     }
     .fa-solid {
         color: transparent;
@@ -654,12 +667,9 @@ nav {
     }
     .fa-regular:hover {
         color: transparent;
-        
     }
     
 }
-
-
 
 .command {
     padding: 20px;
@@ -747,7 +757,7 @@ footer i{
 .first__title {
     display: flex;
     margin-left: 5%;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .heart {
@@ -814,13 +824,14 @@ footer i{
     
 }
 
+
 .prix {
     display: flex;
     align-items: center;
     transform: translateX(98px);
     transition: all 1s;
     font-weight: bold;
-    text-wrap: nowrap;
+    white-space: nowrap;
     &:hover {
         transform: translateX(0px);
     }
