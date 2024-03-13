@@ -255,7 +255,6 @@ text-align: center;
         p{
             position: absolute;
             bottom: 0;
-            top: auto;
         }
 }
 
@@ -281,12 +280,6 @@ text-align: center;
         
     }
     
-}
-
-
-.command {
-padding: 20px;
-width: 100%;
 }
 
 
@@ -392,8 +385,7 @@ footer i{
         transform: scale(1.2);
     }
     .fa-regular:hover {
-        color: transparent;
-        
+        color: transparent; 
     }
 
 }
@@ -479,15 +471,15 @@ footer i{
         transform: translateX(0px);
     }
 
-p {
-    margin-right: 10px;
-}
+    p {
+        margin-right: 10px;
+    }
 
-span {
-    border-radius: 0 15px 15px 0;
-    background-color: $thrid-color;
-    padding: 35px;
-}
+    span {
+        border-radius: 0 15px 15px 0;
+        background-color: $thrid-color;
+        padding: 35px;
+    }
 
 }
 
@@ -511,6 +503,7 @@ span {
     font-size: larger;
     text-align: center;
     margin-top: 50px;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0,0,0,.25);
     &:hover {
         box-shadow: 0.35rem 0.35rem 20px rgba(0,0,0,.35);
     }
@@ -639,6 +632,7 @@ footer i{
 
 .first__title {
     padding-top: 20px;
+    justify-content: center;
 }
 
 .command {
