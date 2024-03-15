@@ -511,8 +511,6 @@ footer i{
 }
 
 
-
-
 @media (min-width: 768px){
 
 
@@ -605,7 +603,7 @@ footer {
 
 .footer__txt {
     gap: 30px;
-    flex-direction: inherit;
+    flex-direction: row;
 }
 
 footer i{
@@ -633,6 +631,7 @@ footer i{
 .first__title {
     padding-top: 20px;
     justify-content: center;
+    margin-left: inherit;
 }
 
 .command {
